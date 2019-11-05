@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SushiTowerGame_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Move Left" id="lsx-kp-IyB">
+                            <connections>
+                                <action selector="MoveLeft" destination="AgC-eL-Hgc" id="Tg6-yB-hsh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Move Right" id="bKf-YK-Sym">
+                            <connections>
+                                <action selector="MoveRight" destination="AgC-eL-Hgc" id="E1N-wY-OGx"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Time Warning" id="trW-7W-tVH"/>
+                    </items>
+                    <connections>
+                        <outlet property="TimerWarning" destination="trW-7W-tVH" id="WTF-vE-I0s"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
